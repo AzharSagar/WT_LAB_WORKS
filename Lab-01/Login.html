@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+    <style>
+        #formDiv
+{
+	width : 400px;
+	height : 370px;
+	
+	position : absolute;
+	 text-align : center; 
+	 
+	  padding : 2rem; box-sizing: border-box;
+	 
+	   box-shadow:0 10px 10px gray ;
+	   top : 15%; 
+	   left : 33%;
+	    width : 500px;
+	 background : white;
+    
+	
+}
+body{
+	
+	background-size : cover;
+	 padding : 0;
+	  margin : 0;
+	  background-color: lightgreen;
+}
+h1{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	 color : #4682B4;
+	  font-size : 2rem;
+}
+.input{
+width : 70%;
+ padding : 0.8rem; 
+ border-radius : 20px;
+  border : none;
+    background-color:#F5F5F5;
+    height: 27px;
+}
+#btn{
+width : 75%; color : red;padding : 0.8rem;   border-radius : 20px;border : none;padding : 0.6rem; background-color : #0072ff; border : none;  color : #fff; font-weight: bold;  height: 43px;
+}
+    </style>
+</head>
+<body>
+	<div id = "formDiv">
+		<h1> LOGIN </h1><br />
+		<form action = 'LoginControllerServlet' method = "get">
+			<input type = 'text' class = "input" name = 'username' placeholder = "Enter Username"><br /><br/>
+			<input type = 'text' class = "input" name = 'password' placeholder = "Enter Password"><br /><br/>
+			<input type = 'submit' value = 'LOGIN' id = "btn">
+                    <br/>
+                    <br/>
+            <input type = 'checkbox' checked value  = 'remmember me'>Remmember me
+		</form>
+	</div>
+</body>
+</html>
